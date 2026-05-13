@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
-import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
-import TopBar from "@/components/layout/TopBar";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,13 +27,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.variable} ${montserrat.variable} antialiased font-sans text-brand-dark bg-brand-light flex flex-col min-h-screen`}>
-        <TopBar />
-        <Navbar />
-        <main className="flex-grow flex flex-col w-full">
-          {children}
-        </main>
-        <Footer />
-        <FloatingWhatsApp />
+        {children}
       </body>
     </html>
   );

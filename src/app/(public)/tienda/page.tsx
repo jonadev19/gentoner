@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { ShoppingCart, Filter, Search } from "lucide-react";
 
 export const metadata = {
